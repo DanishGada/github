@@ -25,6 +25,7 @@ repo.index.add([file_path])
 
 # Set the desired timestamp (replace with your desired date and time)
 string_date = "2023-08-14 12:00:04"
+
 desired_timestamp = datetime.datetime.strptime(string_date, "%Y-%m-%d %H:%M:%S")
 
 # Attach a timezone to the datetime object
