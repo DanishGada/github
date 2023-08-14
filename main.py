@@ -24,7 +24,7 @@ with open(file_path, 'w') as file:
 repo.index.add([file_path])
 
 # Set the desired timestamp (replace with your desired date and time)
-string_date = "2023-08-14 12:00:00"
+string_date = "2023-08-14 12:00:04"
 desired_timestamp = datetime.datetime.strptime(string_date, "%Y-%m-%d %H:%M:%S")
 
 # Attach a timezone to the datetime object
@@ -36,7 +36,7 @@ desired_timestamp = timezone.localize(desired_timestamp)
 # author = repo.config_writer().get_value('user', 'dan')
 # committer = repo.config_writer().get_value('user', 'dan')
 
-repo.index.commit('Add example_file.txt', commit_date=desired_timestamp)
+repo.index.commit('Add ex', commit_date=desired_timestamp)
 
 # Push the changes to the remote repository
 remote = repo.remotes.origin  # Replace 'origin' with your remote's name
